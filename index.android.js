@@ -24,7 +24,9 @@ import StateTest from './StateTest';
 import RefTest from './RefTest';
 import Students from './Students';
 import MingStudent from './MingStudent';
-import FlexBoxTest from './FlexBoxTest';
+import FlexBoxTest2 from './FlexBoxTest2';
+import TouchableTest from './TouchableTest';
+import ImageTest from './ImageTest';
 
 
 class BlinkApp extends Component {
@@ -33,10 +35,11 @@ class BlinkApp extends Component {
     }
 
     render() {
-        return(
-        <View>
-            <FlexBoxTest/>
-        </View>
+        return (
+            <View>
+                <TouchableTest/>
+                <ImageTest></ImageTest>
+            </View>
         )
     }
 }
