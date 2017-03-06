@@ -28,16 +28,18 @@ import FlexBoxTest2 from './FlexBoxTest2';
 import TouchableTest from './TouchableTest';
 import ImageTest from './ImageTest';
 import ScrollViewTest from './ScrollViewTest';
-import ListViewbasics from './ListViewbasics';
 class BlinkApp extends Component {
     constructor(props) {
         super(props);
     }
+
     render() {
         return (
             <View>
-                <Text>ABCE</Text>
-                <ListViewbasics/>
+                <TouchableTest/>
+                <ImageTest></ImageTest>
+                <ScrollViewTest></ScrollViewTest>
+                <TouchableTest/>
             </View>
         )
     }
