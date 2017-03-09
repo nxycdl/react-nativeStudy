@@ -6,7 +6,7 @@
 
 import React, {
     Component,
-    } from 'react';
+} from 'react';
 import {
     AppRegistry,
     DrawerLayoutAndroid,
@@ -16,9 +16,8 @@ import {
     Text,
     Image,
     StyleSheet,
-    View,
-    Navigator
-    } from 'react-native';
+    View
+} from 'react-native';
 
 import PropsTest from './PropsTest';
 import StateTest from './StateTest';
@@ -30,26 +29,16 @@ import TouchableTest from './TouchableTest';
 import ImageTest from './ImageTest';
 import ScrollViewTest from './ScrollViewTest';
 import ListViewbasics from './ListViewbasics';
-import FirstPageComponent from './src/FirstPageComponent';
 class BlinkApp extends Component {
     constructor(props) {
         super(props);
     }
-
     render() {
-        let defaultName = 'FirstPageComponent';
-        let defaultComponent = FirstPageComponent;
         return (
-            <Navigator
-                initialRoute={{ name: defaultName, component: defaultComponent }}
-                configureScene={(route) => {
-                    return Navigator.SceneConfigs.VerticalDownSwipeJump;
-                }}
-                renderScene={(route,navigator)=>{
-                    let Component = route.component;
-                    return <Component {...route.params} navigator={navigator}/>
-                }}
-                />
+            <View>
+                <Text>ABCE</Text>
+                <ListViewbasics/>
+            </View>
         )
     }
 }
