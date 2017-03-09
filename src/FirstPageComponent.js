@@ -1,8 +1,8 @@
 /**
  * Created by dl on 2017-03-09.
  */
-import React,{Component} from 'react';
-import {Text,Image,TouchableOpacity } from  'react-native';
+import React, {Component} from 'react';
+import {Text, Image, View, TouchableOpacity} from  'react-native';
 
 import SecondPageComponent from './SecondPageComponent'
 export default class FirstPageComponent extends Component {
@@ -13,7 +13,7 @@ export default class FirstPageComponent extends Component {
 
     _pressButton() {
         const {navigator} = this.props;
-        console.log(this.props);
+        console.log('frist', this.props);
         if (navigator) {
             navigator.push({
                 name: 'SecondPageComponent',
@@ -26,7 +26,7 @@ export default class FirstPageComponent extends Component {
     render() {
         return (<View>
                 <TouchableOpacity onPress={this._pressButton.bind(this)}>
-                    <Text>点我跳转</Text>
+                    <Text>鐐规垜璺宠浆Frist</Text>
                 </TouchableOpacity>
             </View>
         )
