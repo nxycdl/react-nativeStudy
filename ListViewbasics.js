@@ -26,7 +26,6 @@ export default class ListViewbasics extends Component {
     render() {
         return (
             <ListView
-
                 removeClippedSubviews={false}
                 dataSource={this.state.dataSource}
                 renderRow={this._renderRow}
